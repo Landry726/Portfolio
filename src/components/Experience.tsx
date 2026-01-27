@@ -81,7 +81,6 @@ function Experience() {
       <Title title="Expérience & Études" />
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 mt-10">
-      
         <div className="md:w-1/3">
           <h3 className="text-2xl font-bold mb-6 text-center md:text-left">
             Compétences

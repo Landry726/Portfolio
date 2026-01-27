@@ -1,13 +1,11 @@
 import Title from "./Title";
 import { Github, Car, Package, Landmark, Eye } from "lucide-react";
 
-// Imports des images
-import img1 from "../assets/projects/1.png"; // Livraison de voiture
-import img2 from "../assets/projects/2.png"; // Gestion de colis
-import img3 from "../assets/projects/3.png"; // Transactions bancaires
-// import img4 from "../assets/projects/4.png"; // Gestion de congés
-// import img5 from "../assets/projects/5.png"; // Station service
-// import img6 from "../assets/projects/6.png"; // Gestion demandes info (Stage)
+
+import img1 from "../assets/projects/1.png"; 
+import img2 from "../assets/projects/2.png"; 
+import img3 from "../assets/projects/3.png"; 
+
 
 const projects = [
   {
@@ -40,36 +38,6 @@ const projects = [
     image: img3,
     icon: <Landmark className="text-accent" />
   },
-  // {
-  //   id: 4,
-  //   title: "Gestion de Congés RH",
-  //   description: "Logiciel Desktop destiné aux ressources humaines pour automatiser les demandes et validations de congés.",
-  //   technologies: ["C#", ".NET", "SQL Server"],
-  //   demoLink: "#",
-  //   repoLink: "#",
-  //   image: img4,
-  //   icon: <Calendar className="text-accent" />
-  // },
-  // {
-  //   id: 5,
-  //   title: "Gestion Station Service",
-  //   description: "Système de gestion de point de vente (POS) pour le suivi des ventes de carburant et des stocks.",
-  //   technologies: ["Java", "Swing", "MySQL"],
-  //   demoLink: "#",
-  //   repoLink: "#",
-  //   image: img5,
-  //   icon: <Briefcase className="text-accent" />
-  // },
-  // {
-  //   id: 6,
-  //   title: "Gestion des Demandes",
-  //   description: "Application web réalisée durant mon stage pour la digitalisation des demandes d'informations régionales.",
-  //   technologies: ["Laravel", "PHP", "MySQL"],
-  //   demoLink: "#",
-  //   repoLink: "#",
-  //   image: img6,
-  //   icon: <Users className="text-accent" />
-  // },
 ];
 
 function Project() {
