@@ -39,7 +39,7 @@ function Navbar() {
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
-                className="btn btn-sm btn-ghost hover:text-accent rounded-xl normal-case font-medium"
+                className="btn btn-sm btn-ghost hover:text-accent  hover:btn-link rounded-xl normal-case font-medium"
                 href={link.href}
               >
                 {link.name}
