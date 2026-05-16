@@ -19,9 +19,7 @@ function Home() {
         </div>
 
         <p className="text-lg text-center md:text-left text-base-content/80 leading-relaxed">
-          Étudiant à l'ENI (Ecole Nationale d'Informatique), je transforme vos
-          idées en solutions numériques performantes avec une expertise en
-          développement web et mobile.
+         Je donne vie à vos concepts à travers des solutions numériques sur mesure. Fort d'une expertise en développement web, mobile et en gestion d'infrastructure, je crée des applications robustes, optimisées et centrées sur l'expérience utilisateur.
         </p>
 
         <div className="flex flex-col md:flex-row items-center gap-4">
