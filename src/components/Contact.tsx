@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import { User, Mail, BookOpen, MessageSquare, Send, CheckCircle, AlertCircle } from "lucide-react";
+import {
+  User,
+  Mail,
+  BookOpen,
+  MessageSquare,
+  Send,
+  CheckCircle,
+  AlertCircle,
+} from "lucide-react";
 
 type ContactFormData = {
   prenom: string;
@@ -13,7 +21,7 @@ type ContactFormData = {
 
 export default function Contact() {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
-  const [isError, setIsError]     = useState<boolean>(false);
+  const [isError, setIsError] = useState<boolean>(false);
 
   const {
     register,
@@ -42,30 +50,30 @@ export default function Contact() {
 
   const onSubmit: SubmitHandler<ContactFormData> = (data) => submit(data);
 
-  const inputClass =
-    "input input-bordered w-full pl-10 focus:input-primary";
+  const inputClass = "input input-bordered w-full pl-10 focus:input-primary";
   const fieldClass = "form-control w-full";
 
   return (
-    
-    <section id="contact-section"  className="min-h-screen flex flex-col items-center justify-center py-20 px-4">
-
-     
-      <div className="text-center mb-12">
+    <section
+      id="contact-section"
+      className="min-h-screen flex flex-col items-center justify-center py-20 px-4"
+    >
+      <div className="text-center mb-8">
         <h2 className="text-4xl font-bold tracking-tight">Contact</h2>
-        <div className="mt-2 mx-auto w-16 h-1 rounded-full bg-primary" />
       </div>
 
-     
       <div className="card bg-base-200 shadow-xl w-full max-w-lg">
         <div className="card-body gap-5">
-
-        
           <div className="grid grid-cols-2 gap-4">
             <div className={fieldClass}>
-              <label className="label"><span className="label-text">Prénom</span></label>
+              <label className="label">
+                <span className="label-text">Prénom</span>
+              </label>
               <div className="relative">
-                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40" />
+                <User
+                  size={16}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40"
+                />
                 <input
                   type="text"
                   placeholder="Jean"
@@ -74,14 +82,23 @@ export default function Contact() {
                 />
               </div>
               {errors.prenom && (
-                <label className="label"><span className="label-text-alt text-error">{errors.prenom.message}</span></label>
+                <label className="label">
+                  <span className="label-text-alt text-error">
+                    {errors.prenom.message}
+                  </span>
+                </label>
               )}
             </div>
 
             <div className={fieldClass}>
-              <label className="label"><span className="label-text">Nom</span></label>
+              <label className="label">
+                <span className="label-text">Nom</span>
+              </label>
               <div className="relative">
-                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40" />
+                <User
+                  size={16}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40"
+                />
                 <input
                   type="text"
                   placeholder="Dupont"
@@ -90,36 +107,55 @@ export default function Contact() {
                 />
               </div>
               {errors.nom && (
-                <label className="label"><span className="label-text-alt text-error">{errors.nom.message}</span></label>
+                <label className="label">
+                  <span className="label-text-alt text-error">
+                    {errors.nom.message}
+                  </span>
+                </label>
               )}
             </div>
           </div>
 
-    
           <div className={fieldClass}>
-            <label className="label"><span className="label-text">Email</span></label>
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
             <div className="relative">
-              <Mail size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40" />
+              <Mail
+                size={16}
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40"
+              />
               <input
                 type="email"
                 placeholder="jean@example.com"
                 className={inputClass}
                 {...register("email", {
                   required: "Requis",
-                  pattern: { value: /^\S+@\S+\.\S+$/, message: "Email invalide" },
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: "Email invalide",
+                  },
                 })}
               />
             </div>
             {errors.email && (
-              <label className="label"><span className="label-text-alt text-error">{errors.email.message}</span></label>
+              <label className="label">
+                <span className="label-text-alt text-error">
+                  {errors.email.message}
+                </span>
+              </label>
             )}
           </div>
 
-         
           <div className={fieldClass}>
-            <label className="label"><span className="label-text">Sujet</span></label>
+            <label className="label">
+              <span className="label-text">Sujet</span>
+            </label>
             <div className="relative">
-              <BookOpen size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40" />
+              <BookOpen
+                size={16}
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40"
+              />
               <input
                 type="text"
                 placeholder="Mission freelance / Collaboration..."
@@ -128,15 +164,23 @@ export default function Contact() {
               />
             </div>
             {errors.sujet && (
-              <label className="label"><span className="label-text-alt text-error">{errors.sujet.message}</span></label>
+              <label className="label">
+                <span className="label-text-alt text-error">
+                  {errors.sujet.message}
+                </span>
+              </label>
             )}
           </div>
 
-         
           <div className={fieldClass}>
-            <label className="label"><span className="label-text">Message</span></label>
+            <label className="label">
+              <span className="label-text">Message</span>
+            </label>
             <div className="relative">
-              <MessageSquare size={16} className="absolute left-3 top-4 text-base-content/40" />
+              <MessageSquare
+                size={16}
+                className="absolute left-3 top-4 text-base-content/40"
+              />
               <textarea
                 rows={4}
                 placeholder="Décrivez votre projet..."
@@ -148,11 +192,14 @@ export default function Contact() {
               />
             </div>
             {errors.message && (
-              <label className="label"><span className="label-text-alt text-error">{errors.message.message}</span></label>
+              <label className="label">
+                <span className="label-text-alt text-error">
+                  {errors.message.message}
+                </span>
+              </label>
             )}
           </div>
 
-     
           {isSuccess && (
             <div role="alert" className="alert alert-success">
               <CheckCircle size={18} />
@@ -166,7 +213,6 @@ export default function Contact() {
             </div>
           )}
 
-       
           <button
             type="submit"
             onClick={handleSubmit(onSubmit)}
@@ -176,7 +222,6 @@ export default function Contact() {
             <Send size={16} />
             {isSubmitting ? "Envoi en cours..." : "Envoyer"}
           </button>
-
         </div>
       </div>
     </section>
