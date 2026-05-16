@@ -32,7 +32,7 @@ function Home() {
           </a> */}
           
           <a 
-          href="/public/CV Landry 2.pdf"
+          href="/public/CV Landry.pdf"
           download="CV Landry.pdf"
           className="btn  btn-accent btn-lg shadow-lg w-full md:w-fit hover:scale-105 transition-transform"
           >
