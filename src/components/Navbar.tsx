@@ -22,7 +22,7 @@ function Navbar() {
     { name: "À propos", href: "#About" },
     { name: "Expériences", href: "#Experience" },
     { name: "Projets", href: "#Projects" },
-    { name: "Contact", href: "#Contact" },
+    { name: "Contact", href: "#contact-section" }, 
   ];
 
   return (
