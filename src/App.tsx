@@ -20,8 +20,8 @@ export default function App() {
       </div>
       <div className="p-5 md:px-[15%]">
         <Contact />
-      <Footer/>
       </div>
+      <Footer/>
     </div>
   )
 }
