@@ -1,4 +1,4 @@
-import { Cuboid, Facebook, Github, Linkedin, Heart, ArrowUpCircle } from "lucide-react";
+import { Cuboid, Facebook, Github, Heart, ArrowUpCircle } from "lucide-react";
 
 function Footer() {
   
@@ -37,13 +37,13 @@ function Footer() {
        
         <nav>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
+            {/* <a href="#" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
               <Linkedin className="w-6 h-6" />
-            </a>
-            <a href="#" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
+            </a> */}
+            <a href="https://github.com/Landry726" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
+            <a href="https://www.facebook.com/julien.rakotonirina.5458" className="hover:text-accent hover:-translate-y-2 transition-all duration-300">
               <Facebook className="w-6 h-6" />
             </a>
           </div>

@@ -1,6 +1,6 @@
 import Title from "./Title";
-import img from "../assets/img3.png";
-import { Layers, Layout, Server } from "lucide-react";
+import img from "../assets/photo.png";
+import { LayoutGrid, Layout, Server } from "lucide-react";
 
 const aboutSection = [
   {
@@ -17,9 +17,9 @@ const aboutSection = [
   },
   {
     id: 3,
-    title: "Administration & Réseaux",
-    description: "Gestion de serveurs Linux/Windows et optimisation des infrastructures réseaux.",
-    icon: <Layers className="text-accent w-8 h-8" />,
+    title: "Passionéé UI/Ux design",
+    description: "Crée des interface utilisatuer moderne , et fonctionnelles est ma priorité .",
+    icon: <LayoutGrid className="text-accent w-8 h-8" />,
   },
 ];
 

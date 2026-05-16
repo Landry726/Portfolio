@@ -22,6 +22,7 @@ function Navbar() {
     { name: "À propos", href: "#About" },
     { name: "Expériences", href: "#Experience" },
     { name: "Projets", href: "#Projects" },
+    { name: "Contact", href: "#Contact" },
   ];
 
   return (
@@ -39,7 +40,7 @@ function Navbar() {
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
-                className="btn btn-sm btn-ghost hover:text-accent  hover:btn-link rounded-xl normal-case font-medium"
+                className="btn btn-sm btn-ghost hover:text-accent  hover:btn-link rounded-xl normal-case font-medium "
                 href={link.href}
               >
                 {link.name}
